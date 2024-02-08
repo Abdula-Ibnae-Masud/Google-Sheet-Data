@@ -1,8 +1,5 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:sheets/api/sheets/user_sheets_api.dart';
-import 'package:sheets/model/user.dart';
-import 'package:sheets/widget/user_form_widget.dart';
 import 'package:http/http.dart' as http;
 
 class ModifySheetPage extends StatefulWidget {
@@ -40,9 +37,7 @@ class _ModifySheetPageState extends State<ModifySheetPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
-
     getUsers();
   }
 

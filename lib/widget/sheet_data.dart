@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:sheets/api/sheets/user_sheets_api.dart';
-import 'package:sheets/model/user.dart';
-import 'package:sheets/page/homepage.dart';
+
+import '../api/sheets/user_sheets_api.dart';
+import '../model/user.dart';
+import '../page/homepage.dart';
 
 class SheetData extends StatefulWidget {
   const SheetData({Key? key}) : super(key: key);
@@ -38,7 +39,6 @@ class _SheetDataState extends State<SheetData> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     getUsers();
   }
@@ -74,8 +74,8 @@ class _SheetDataState extends State<SheetData> {
             }));
   }
 
-  Widget buildSpinKitPouringHourGlass() => Column(
-        children: const [
+  Widget buildSpinKitPouringHourGlass() => const Column(
+        children: [
           Padding(
             padding: EdgeInsets.only(top: 200),
             child: Center(
@@ -131,10 +131,10 @@ class _SheetDataState extends State<SheetData> {
                             Text('${e.id}'),
                           ),
                           DataCell(
-                            Text('${e.name}'),
+                            Text(e.name),
                           ),
                           DataCell(
-                            Text('${e.email}'),
+                            Text(e.email),
                           ),
                           // DataCell(Text('${e['body']}'),
                           // ),

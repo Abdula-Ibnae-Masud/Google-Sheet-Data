@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sheets/page/create_sheet_page.dart';
-import 'package:sheets/page/post_sheet_data.dart';
-import 'package:sheets/widget/sheet_data.dart';
+
+import '../widget/sheet_data.dart';
+import 'create_sheet_page.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -18,21 +18,21 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: Colors.grey.withOpacity(0.5),
       body: Column(
         children: [
-          Container(
+          /* Container(
             height: 250,
             decoration: const BoxDecoration(
                 image: DecorationImage(
                     alignment: Alignment.topCenter,
                     image: AssetImage('assets/images/banner2.jpg'),
                     fit: BoxFit.contain)),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(
+          ), */
+          const Padding(
+            padding: EdgeInsets.only(
               left: 25,
             ),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
+              children: [
                 CircleAvatar(
                   radius: 30,
                   backgroundImage: AssetImage('assets/images/dbsl.png'),
@@ -91,9 +91,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5),
                       ),
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: const [
+                        children: [
                           Image(
                             height: 70,
                             image: AssetImage(
@@ -114,9 +114,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5),
                       ),
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: const [
+                        children: [
                           Image(
                             height: 70,
                             image: AssetImage('assets/flaticons/invoice.png'),
@@ -130,9 +130,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(5),
                     ),
-                    child: Column(
+                    child: const Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
+                      children: [
                         Image(
                           height: 70,
                           image: AssetImage('assets/flaticons/skills.png'),
@@ -145,9 +145,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(5),
                     ),
-                    child: Column(
+                    child: const Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
+                      children: [
                         Image(
                           height: 70,
                           image: AssetImage('assets/flaticons/graph.png'),

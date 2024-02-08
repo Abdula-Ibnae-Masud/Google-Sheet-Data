@@ -1,6 +1,6 @@
 {
-    "name": "sheets",
-    "short_name": "sheets",
+    "name": "sheetcrud",
+    "short_name": "sheetcrud",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

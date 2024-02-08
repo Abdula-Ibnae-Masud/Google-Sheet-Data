@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sheets/model/user.dart';
-import 'package:sheets/widget/button_widget.dart';
+
+import '../model/user.dart';
+import 'button_widget.dart';
 
 class UserForm extends StatefulWidget {
   final ValueChanged<User> onSavedUser;

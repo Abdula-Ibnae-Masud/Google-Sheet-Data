@@ -1,7 +1,8 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:gsheets/gsheets.dart';
-import 'package:sheets/model/user.dart';
+
+import '../../model/user.dart';
 
 class UserSheetsApi {
   static const _credentials = r'''
@@ -31,7 +32,7 @@ class UserSheetsApi {
       final firstRow = UserFields.getFields();
       _userSheet!.values.insertRow(1, firstRow);
     } catch (e) {
-      print('Init Error: $e');
+      // print('Init Error: $e');
     }
   }
 
